@@ -15,6 +15,13 @@ parser.add_argument('--question_col',type=str,default=None,
                     help='Provide the column name from the given csv file name with (translated) questions.')
 parser.add_argument('--prompt_dir',type=str,default=None,
                     help='Provide the directory where the propmts are saved.')
+parser.add_argument(
+    '--gpus',
+    type=str,
+    default=None,
+    help='Comma-separated GPU ids to use, e.g. "0" or "0,1". Sets CUDA_VISIBLE_DEVICES.'
+)
+
 parser.add_argument('--prompt_file',type=str,default=None,
                     help='Provide the name of the csv file where the propmts are saved.')
 parser.add_argument('--prompt_no',type=str,default=None,
